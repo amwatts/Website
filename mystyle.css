@@ -1,0 +1,112 @@
+/* CSS Document */
+
+	html { margin: -8px; }
+	.header { height: 140px; text-align: center; color: #0F0; padding-bottom: 20px; border-bottom: 1px solid #999; }
+
+	.banner { margin: 37px 0px 3% 0px; height: 400px; width: 100%; border-top: 2px solid green;border-bottom: 2px solid green; } 
+	#bannerIndex { background-image: url("images/parentmainpicture.jpg"); }
+	#bannerAbout { background-image: url("images/childphoto1.jpg"); }
+	#bannerResume { background-image: url("images/childphoto7.jpg"); }
+	#bannerPortfolio { background-image: url("images/childphoto6.jpg"); }
+	#bannerContact { background-image: url("images/childphoto5.jpg"); }
+
+	.banner h1 { background-color: white; color: green; text-align:center; opacity: 0.6; width: 40%; padding-bottom: 10px;}
+	
+	.navigation { margin-left: auto; margin-right: auto; }
+	
+	.content { background-color:white; margin: 5% 15% 5% 15%;padding-top: 30px; text-align: center; }
+
+	.mainText { background-color:white; padding: 4% 10% 4% 10%; }
+
+	table, td { text-align: left; border: 2px solid black; }
+	table { width: 50%; }
+
+	th, tr, td { padding: 5px; }
+
+	#pageMenu { list-style-type: none; padding-bottom: 30px; margin-left: -45px; }
+	#pageMenu li { display: inline; height: 100px; width: 100px; padding: 30px 20px 30px 20px; text-align: center; }
+	#pageMenu li a { text-decoration: none; color: white; }
+	#pageMenu li a:hover { background-color: white; color: black; padding: 30px 20px 30px 20px; }
+
+	.mainArticle { height: 100%; width: 50%; padding: 10px; margin: 0px 3% 3% 10%; float: left } 
+	.contentNoBorder { margin: 7% 10% 5% 10%; }
+	.contactContent { margin: 7% 10% 5% 10%; height: 150px; }
+	
+	.sideRail { height: 100%; width: 20%; border: 2px solid #0F0; border-radius: 0.25em; margin: 0% 0% 2% 0%; padding: 8px; float: left; }
+	.footer { height: 170px; background-color: #288301; color: white; border-top: 2px solid green; margin: 20px 0px 0px 0px; text-align: center; float: none; padding-top: 10px; width: 100%; clear: left; }
+	
+	#center, #color, #answer { text-align: center; }
+	#middleImage { margin-left: auto; margin-right: auto; display; inline; }
+	#indent { text-indent: 50px; }
+	
+	#bullets { text-align: left; padding: 0px 20% 0px 20%; }
+
+	.about1 { width: 31%; float: left; color: #F6C; text-align: left; }
+	.about2 { width: 31%; float: left; text-align: center; font-style: italic; color: #00F196; font-size: 24px; padding-left: 30px; }
+
+	#date { color:red; text-decoration: underline; }
+	
+	#educationImage { position: absolute; height: 150px; top: 250px; right: 20%;}
+	
+	.bioPicClass { clear:left; float:left; width: 50%; padding-top: 5%; }
+	.bioPicClass img { width:90%; height: 90%; }
+	#PLphoto { height: 30px; width: 30px; }
+	.PLlist { float: left; width: 50%; }
+	
+	#aboutMepic { border-radius:49em; border: 1px solid black; }
+
+	.artUL ul li { list-style-type: none; text-align: center; }
+	.artWorkContent img { border: 2px solid black; }
+	
+	#contactPic { position: absolute; border: 1px solid #999; border-radius: 10em; top: 670px; right: 10%; }
+	
+	#theImage { height: 300px; width: 500px; display: block; margin-left: auto; margin-right: auto; }
+	#bioParagraph { clear:left; text-indent: 50px; width:75%; padding-left: 13%; }
+	
+	.buttonList, .middle { width: 50%; text-align: center; margin-left: auto; margin-right: auto; }
+	button { border: 1px solid black; border-radius: 1em; background-color: white; padding-top: 10px; padding-bottom: 10px; width: 120px; text-align: center; margin-left: auto; margin-right: auto; display: inline;}
+	button:hover { background-color: black; color: white; }
+	button a { color: black; text-decoration:none; }
+	button a:hover { color: white; }
+	
+/*** TABLET ***/
+@media only screen and (max-width : 1025px), only screen and (max-device-width : 1025px) {
+	.Content .mainArticle p { font-size: 20px; } 
+	.about1, .about2 {float: none; clear: left; width: 100%; padding-left: 0px;}
+	#portfolioImage {width: 100%; }
+	.bioPicClass { width: 100%; }
+	.bioPicClass img { width: 100%; }
+	.PLlist { float: none; clear:left; width: 100%; }
+	.PLlist p {text-align: center; }
+	#bioPoster { width: 100%; }
+	.contactContent { height: 300px; }
+	#contactPic { top: 800px; display: block; margin-right:auto; margin-left: auto; }
+	#educationImage { right: 5%; }
+	button { width: 200px; }
+}
+
+/*** MOBILE ***/
+@media only screen and (max-width : 767px), only screen and (max-device-width : 767px) {
+	body p { font-size: 30px; }
+	.Content .mainArticle p, .Content .mainArticle h2 { margin-right: -70%; margin-left: -10%; }
+	.sideRail { clear: left; display: block; margin-left: 10%; width: 80%; }
+	.sideRail a, .mainText p, .content p, .content ul, .contactContent p, .footer p { font-size: 30px; }
+	.about1, .about2, .about3 { width: 600px; margin-left: -30%; margin-right: -30%; font-size: 30px; }
+	input { width: 300px; height: 50px; }
+	.mainText table { width: 100%; }
+	header { height: 300px; }
+	header image  {width: 250%; height: 250%; }
+	.navigation li { width: 100%; }
+	#bullets { padding: 0px; }
+	#theImage { width: 100%; height: 80%; }
+	.artWorkContent img, .artWorkContent a img {width: 100%;}
+	.artWorkContent a img {height: 50%;}
+	.bioPicClass img { width: 100%; height: 50%;}
+	#bioParagraph { width: 100%; padding: 0px; }
+	.contactContent { height: 450px; }
+	#contactPic { top: 900px; }
+	#educationImage { position: relative; top: 0px;}
+	.buttonList { margin-left: 0%; }
+	button { width: 500px; font-size: 50px; }
+	.footer { height: 300px; }
+}

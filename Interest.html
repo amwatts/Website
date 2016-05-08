@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" type="image/png" href="images/logo.fw.png"/>
+    <meta name="keywords" content="Web develper, Student Page, Alissa Watts" />
+    <meta name="Description" content="Read all about the Sacred Heart University student Alissa Watts!" />
+	<title>Alissa Watts | Contact</title>
+    
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+
+<!-- Menu was created by DreamWeaver -->
+<!-- Functions based off of w3school excercizes -->
+
+</head>
+
+
+
+<body>
+
+<div class="header">
+<a href="index.html"><img src="images/logo.jpg" width="100" height="100" alt="Logo" /></a>
+<p>Watts Up?</p>
+</div>
+
+
+
+<div class="navigation">
+  <ul id="MenuBar1" class="MenuBarHorizontal">
+    <li><a class="MenuBarItemSubmenu" href="about.html">About</a>
+      <ul>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Interest.html">Interests</a></li>
+      </ul>
+    </li>
+    <li><a href="resume.html">Resume</a></li>
+    <li><a class="MenuBarItemSubmenu" href="portfolio.html">Portfolio</a>
+      <ul>
+        <li><a href="Websites.html">Websites</a></li>
+        <li><a href="ArtWork.html">Art Work</a></li>     	
+        <li><a href="Biology.html">Biology</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</div>
+    
+<hr />    
+<div class="mainText">
+
+<h1 id="center" >Interests</h1>
+<h2 id="center" style="color: #0CC">Click the button to see the picture!</h2>
+<h3 ID="center">Favorite Sports Teams</h3>
+
+<img id="theImage" src="images/clickBelow.jpg"><br /><br />
+
+<div class="buttonList">
+<p id="name">Choose from below</p>
+<button type="button" onclick="PatsImage()">Football</button>
+<button type="button" onclick="BruinsImage()">Hockey</button>
+<button type="button" onclick="SoxImage()">Baseball</button>
+</div>
+<hr />
+
+<script>
+function PatsImage() {
+    var image = document.getElementById('theImage');
+    if (image.src.match("tomBrady")) {
+        alert("Already on that image!");
+    } else {
+        image.src = "images/tomBrady.jpg"; 
+		document.getElementById('name').innerHTML = "The Patriots"; 
+		document.getElementById('theImage').style.border = "1px solid black";}}
+
+function BruinsImage() {
+    var image = document.getElementById('theImage');
+    if (image.src.match("reillySmith")) {
+        alert("Already on that image!");
+    } else {
+        image.src = "images/reillySmith.jpg"; 
+		document.getElementById('name').innerHTML = "The Bruins";}}
+		
+function SoxImage() {
+    var image = document.getElementById('theImage');
+    if (image.src.match("davidOrtiz")) {
+        alert("Already on that image!");
+    } else {
+        image.src = "images/davidOrtiz.jpg"; 
+		document.getElementById('name').innerHTML = "The Red Sox";}}
+</script>
+
+<h2 id="center" style="color: #0CC">Can you guess my favorite number?</h2>
+<p id="center">Please input a positive integer to 100:</p>
+<div class="middle">
+<form>
+<input id="guess" type="number">
+</form>
+<div class="buttonList">
+<button type="button" onclick="guesser()">Submit</button>
+</div>
+<p id="demo">Answer.</p>
+</div>
+
+<hr />
+<script>
+function guesser() {
+    var x, response;
+    x = document.getElementById("guess").value;
+    if (isNaN(x) || x < 1 || x > 100) {
+        response = "Incorrect input!";
+    } else if ( x == 77 ) {
+        response = "Correct!";
+    }
+      else if ( x < 77 ) {
+        response = "too low."; 
+    }
+      else {
+        response =  "too high.";
+    }
+    document.getElementById("demo").innerHTML = response;
+}
+</script>
+
+<h2 id="color" style="color: #0CC">Try to guess my favorite color</h2>
+<p id="answer">is it...</p>
+
+<div class="buttonList">
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'red', document.getElementById('answer').innerHTML = 'nope'">
+Red?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'orange', document.getElementById('answer').innerHTML = 'nope'">
+Orange?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'yellow', document.getElementById('answer').innerHTML = 'nope'">
+Yellow?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'green', document.getElementById('answer').innerHTML = 'nope'">
+Green?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'blue', document.getElementById('answer').innerHTML = 'YES!'" >
+Blue?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'indigo', document.getElementById('answer').innerHTML = 'nope'">
+indigo?</button>
+<button type="button"
+onClick = "document.getElementById('color').style.color = 'violet', document.getElementById('answer').innerHTML = 'nope'">
+Violet?</button>
+<div>
+
+</div>
+
+</div>
+</div>
+
+ 
+ 
+ <div class="footer">
+  <p>Thanks for looking!</p>
+  <p>Check out my social media pages too</p>
+  	<a href="https://www.facebook.com/alissa.watts.18"></a>
+	<a href="https://plus.google.com/u/0/100667527379312308919/posts"><img src="images/googlepluslogo.jpg" width="30" height="30" alt="google" /> </a>
+	<a href="https://www.linkedin.com/pub/alissa-watts/9a/713/a8b"><img src="images/linkedinlogo.jpg" width="30" height="30" alt="LinkedIn" /> </a>
+	<a href="https://twitter.com/AlissaWattsUp"></a>
+   <p>Or email me at Wattsa30@mail.sacredheart.edu</p>
+</div>
+  
+  
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+ 
+ </body>
+ </html>
